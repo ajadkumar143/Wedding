@@ -1,0 +1,305 @@
+*{box-sizing:border-box}html,body,#root{width:100%;height:100%;margin:0;overflow:hidden}body{background:#261319;font-family:'Noto Sans Devanagari','Mangal','Nirmala UI',sans-serif}button,a{font:inherit;touch-action:manipulation}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible{outline:2px solid currentColor;outline-offset:3px}.stage{height:100vh;height:100dvh;display:grid;place-items:center;background:radial-gradient(ellipse,#56373c,#1c1116 75%)}.invitation{--ink:#612c24;--title:#89282b;--gold:#d6a539;--light:#fff6d2;--deep:#f1d58c;--panel:#fffdf0bd;--accent:#d87980;position:relative;isolation:isolate;width:min(100vw,56.25dvh);height:100%;display:flex;flex-direction:column;overflow:hidden;padding:max(37px,calc(env(safe-area-inset-top) + 27px)) 23px max(13px,calc(env(safe-area-inset-bottom) + 8px));color:var(--ink);background:radial-gradient(ellipse at 50% 42%,var(--light) 5%,transparent 74%),linear-gradient(160deg,var(--light),var(--deep));box-shadow:0 0 70px #0008}.haldi{--ink:#663508;--title:#823b09;--gold:#b46f11;--light:#fff1a3;--deep:#ff9f14;--panel:#fff3bbd9;--accent:#ffab08}.mehndi{--ink:#1c4c2b;--title:#164329;--gold:#c9a340;--light:#d9edc5;--deep:#70a17a;--panel:#ecf6d7cf;--accent:#6caa47}.wedding{--ink:#fff0cb;--title:#ffd164;--gold:#ffc65e;--light:#a62c18;--deep:#540514;--panel:#74151bcb;--accent:#e85b51}.vidai{--ink:#762942;--title:#a42353;--gold:#dfac55;--light:#fff0eb;--deep:#f77ba9;--panel:#fff1f4bf;--accent:#eb4b91}.location{--ink:#633a24;--title:#8b3428;--gold:#bd8c32;--light:#fff9e6;--deep:#ead3a0;--panel:#fff9e9d9;--accent:#d96770}.decor{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}.frame{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 0 3px #ffcf6266)}.watermark{position:absolute;inset:12% 9%;z-index:-1;opacity:.13;background:repeating-radial-gradient(ellipse at 50% 48%,transparent 0 21px,var(--gold) 22px 23px,transparent 24px 43px);mask-image:radial-gradient(ellipse,#000,transparent 72%)}.particle{position:absolute;font-size:var(--size);color:#fff6b0;filter:drop-shadow(0 0 4px #e9b938);animation:twinkle 3s ease-in-out infinite;animation-delay:var(--delay)}.petal{font-size:13px;color:var(--accent);animation:drift 7s ease-in-out infinite;animation-delay:var(--delay);opacity:.35}.dangling{transform-box:fill-box;transform-origin:top center;animation:sway 4s ease-in-out infinite}.toran-flower{animation:flower-glow 3s ease-in-out infinite}.balloon-bunch{position:absolute;top:22%;width:28px;height:48px;animation:float 5s ease-in-out infinite;opacity:.68}.bunch0{left:14px}.bunch1{right:14px;animation-delay:-2s}.balloon-bunch i{position:absolute;width:13px;height:17px;border-radius:50%;background:radial-gradient(circle at 30% 24%,#fff9 0 9%,transparent 15%),var(--accent);box-shadow:inset -2px -2px 4px #0002}.balloon-bunch i:after{content:'';position:absolute;top:17px;left:6px;width:1px;height:23px;background:var(--gold);transform:rotate(-8deg)}.balloon-bunch i:nth-child(2){left:10px;top:-7px;background:radial-gradient(circle at 30% 24%,#fff9 0 9%,transparent 15%),#f2b83e}.balloon-bunch i:nth-child(3){left:17px;top:6px;background:radial-gradient(circle at 30% 24%,#fff9 0 9%,transparent 15%),#ffe7a7}.invitation:before{content:'';position:absolute;z-index:-2;inset:0;pointer-events:none;background:linear-gradient(120deg,transparent 25%,#fff3 48%,transparent 65%);background-size:260% 260%;animation:shine 12s infinite alternate}.wedding:before{opacity:.45}header{display:flex;justify-content:space-between;align-items:center;flex:none;padding:0 2px 2px;font-size:10px;font-weight:700;letter-spacing:.06em}header>div{display:flex;gap:5px}header button{border:1px solid var(--gold);background:var(--panel);color:var(--ink);border-radius:50%;width:30px;height:30px;font-size:14px}.progress{height:2px;margin:3px 4px 2px;background:color-mix(in srgb,var(--gold) 24%,transparent);flex:none}.progress i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),#fff3ac);width:0}.progress .playing{animation:progress 5s linear forwards}.page{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;overscroll-behavior:contain;touch-action:pan-y;text-align:center;display:flex;flex-direction:column;animation:reveal .75s cubic-bezier(.22,.7,.25,1) both}.content{margin:auto 0;display:flex;flex-direction:column;align-items:center;gap:clamp(5px,1.05dvh,11px);padding:7px 8px 8px}h1,h2,p{margin:0}h1,h2{font-family:'Noto Serif Devanagari','Kokila','Noto Sans Devanagari','Mangal',serif;color:var(--title);font-weight:700;line-height:1.28}h1{font-size:clamp(27px,4.7dvh,42px);letter-spacing:-.045em;text-shadow:0 1px 0 #fff3}.wedding h1,.wedding h2{text-shadow:0 2px 10px #e6aa3c33}.vidai h1{font-size:clamp(24px,4dvh,36px)}h2{font-size:clamp(22px,3.7dvh,32px)}p{font-size:clamp(12px,1.78dvh,15px);line-height:1.52}.eyebrow{font-size:11px;font-weight:700;letter-spacing:.06em;border:1px solid color-mix(in srgb,var(--gold) 65%,transparent);border-radius:30px;padding:4px 13px;background:var(--panel)}.verse{font-size:clamp(10.5px,1.5dvh,13px);line-height:1.6}.fine{font-size:11px;line-height:1.45}.sacred{border:1px solid var(--gold);width:48px;height:48px;display:grid;place-items:center;border-radius:50%;font-family:serif;color:var(--title);font-size:34px;background:var(--panel);box-shadow:0 0 18px #f5cd4a66;animation:float 5s ease-in-out infinite}.tagline{font-family:'Noto Serif Devanagari','Mangal',serif;font-size:clamp(13px,2dvh,17px);font-weight:600;font-style:italic}.ornament{display:flex;align-items:center;justify-content:center;gap:7px;color:var(--gold);width:78%;font-size:15px;line-height:1}.ornament i{height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--gold),transparent)}.names{display:flex;flex-direction:column;gap:1px;align-items:center;width:100%}.names>span{font-family:serif;font-style:italic;font-size:14px;color:var(--title)}.names p{font-size:clamp(11px,1.6dvh,13px)}.names .fine{font-size:10.5px}.names .ornament{margin:4px auto}.chips{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:5px;width:100%}.chips>span{border:1px solid var(--gold);background:var(--panel);border-radius:25px;padding:5px 9px;font-size:clamp(11px,1.65dvh,14px);font-weight:700;white-space:nowrap}.day{font-size:12px;font-weight:600}.count>div{display:flex;gap:5px;margin-top:4px}.count span{display:flex;flex-direction:column;min-width:40px;padding:3px 6px;border-radius:7px;border:1px solid #dfb55a;background:var(--panel)}.count b{font:700 18px Georgia,serif}.count em{font-size:10px;font-style:normal}.count small{font-size:10px}.blessing{max-width:300px}.closing{width:94%;font-size:clamp(11px,1.65dvh,14px);border-top:1px solid color-mix(in srgb,var(--gold) 50%,transparent);padding-top:6px;line-height:1.5}.art-halo{width:100%;min-height:90px;height:clamp(105px,23dvh,205px);display:grid;place-items:center;position:relative;background:radial-gradient(ellipse,#fff2a866,transparent 67%)}.mehndi .art-halo{background:radial-gradient(ellipse,#eef7c699,transparent 69%)}.ceremony-art{width:clamp(130px,42dvh,220px);height:100%;max-width:100%;filter:drop-shadow(0 6px 10px #9b5f2433);animation:float 4.5s ease-in-out infinite}.wedding-art{height:clamp(50px,11dvh,92px);width:70%;animation:float 5s ease-in-out infinite}.heart-art{font-size:clamp(25px,5dvh,43px);line-height:1;color:#d74a80;animation:float 4s ease-in-out infinite}.heart-art span{color:#ea6191;text-shadow:0 0 13px #fff}.dress{display:flex;gap:7px;align-items:center;padding:7px 11px;border:1px solid var(--gold);background:var(--panel);border-radius:24px;text-align:left}.dress i{display:block;width:18px;height:18px;border-radius:50%;border:1px solid #fff9;box-shadow:0 1px 3px #0002}.dress b{font-size:11px;display:block}.dress small{font-size:10px;display:block}.compact{padding:4px 10px}.action,.smallaction{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid var(--gold);border-radius:24px;padding:7px 12px;background:linear-gradient(135deg,#fff0b5,#edbd58);color:#62370a;font-size:11px;font-weight:700;min-height:34px;box-shadow:0 2px 7px #9c5b201a}.smallaction{background:var(--panel);color:var(--ink);padding:4px 9px;min-height:30px}.paired{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:6px}.paired>div,.route>div{border:1px solid var(--gold);background:var(--panel);border-radius:12px;padding:7px}.paired h2{font-size:22px}.paired p{margin:2px 0 4px}.invite{width:100%;padding:4px 6px}.invite p{font-size:clamp(11px,1.65dvh,14px);margin:4px 0;line-height:1.48}.route{width:100%;display:grid;gap:2px}.route>div{padding:5px 7px}.route b{font-size:12px;color:var(--title)}.route p{font-size:clamp(10.5px,1.55dvh,13px);line-height:1.45}.route a{font-size:11px;font-weight:700}.route>span{line-height:1;color:var(--title);font-weight:700}.qr{display:block;background:white;border:2px solid var(--gold);padding:3px;border-radius:8px;box-shadow:0 0 0 3px #fff8;line-height:0}.qr img{width:clamp(104px,17dvh,143px);height:auto;display:block;image-rendering:pixelated}.actions .action{flex:1;white-space:nowrap;padding-inline:7px}.location .content{gap:5px}.location h1{font-size:clamp(24px,4dvh,36px)}.location .closing{padding-top:4px}footer{flex:none;padding:0 2px 3px}.dots{display:flex;justify-content:center;gap:2px}.dots button{width:25px;height:21px;background:none;border:0;position:relative;padding:0}.dots button:after{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:6px;height:6px;border-radius:10px;background:var(--gold);opacity:.55}.dots button.active:after{width:17px;opacity:1;background:var(--title)}nav{display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:700}nav button{border:1px solid var(--gold);background:var(--panel);color:var(--ink);border-radius:30px;padding:6px 13px;min-height:33px}.wedding nav button,.wedding header button{color:var(--ink)}@keyframes reveal{from{opacity:.1;transform:translateX(16px) scale(.985);filter:blur(3px)}to{opacity:1;transform:none;filter:none}}@keyframes float{50%{transform:translateY(-5px)}}@keyframes sway{50%{transform:rotate(5deg)}}@keyframes twinkle{0%,100%{opacity:.18;transform:scale(.65)}50%{opacity:1;transform:scale(1.5)}}@keyframes drift{50%{transform:translate(12px,24px) rotate(80deg);opacity:.65}}@keyframes shine{to{background-position:100% 100%}}@keyframes flower-glow{50%{filter:brightness(1.25)}}@keyframes progress{to{width:100%}}@media(max-width:767px) and (orientation:portrait){.invitation{width:100vw;height:100dvh;box-shadow:none}}@media(max-height:680px){.invitation{padding-top:max(30px,calc(env(safe-area-inset-top) + 20px));padding-inline:20px}.content{gap:4px;padding:4px 4px}.sacred{width:37px;height:37px;font-size:26px}.art-halo{height:100px}.wedding-art{height:48px}.dress{padding:4px 8px}.count span{padding:2px 5px}.chips>span{padding:3px 7px}.qr img{width:100px}.route>div{padding:4px}.location .content{gap:3px}.closing{padding-top:3px}.heart-art{font-size:24px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+
+/* V5: cinematic animation system. Only transform and opacity move continuously.
+   Scene content is never an image or a video, so text remains selectable. */
+.stage{background:radial-gradient(ellipse at center,#5b3448,#140c16 72%);min-height:0;overflow:hidden}
+.invitation{width:min(100vw,56.25vh);width:min(100vw,56.25dvh);height:100%;padding:max(48px,calc(env(safe-area-inset-top) + 30px)) 23px max(15px,calc(env(safe-area-inset-bottom) + 9px));--glow:#ffdb78;--mist:#fff6cc;--rim:#d89c36;background:radial-gradient(ellipse at 50% 42%,var(--light) 8%,transparent 75%),linear-gradient(155deg,var(--light) 0%,var(--deep) 100%);transition:background-color .4s,color .25s}
+.welcome{--light:#fff9e6;--deep:#efc05b;--title:#8d183a;--gold:#b78229;--accent:#e74580;--glow:#fff0ad;--mist:#ff9bc54d}
+.haldi{--light:#fff3a4;--deep:#ff9c05;--gold:#b46a10;--title:#843307;--mist:#ff8e1c66;--glow:#fff3a0}
+.mehndi{--light:#e1f5bd;--deep:#3f9b69;--title:#12472b;--gold:#ac852b;--mist:#a5df6277;--glow:#efffc3}
+.wedding{--light:#ad1733;--deep:#390415;--title:#ffdc7c;--gold:#ffcf62;--panel:#670e24e8;--mist:#ff665244;--glow:#ffd77b}
+.vidai{--light:#fff0f2;--deep:#e963a4;--title:#94194c;--gold:#ba7936;--mist:#f355a95c;--glow:#fff1d0}
+.location{--light:#fffbea;--deep:#eaca84;--title:#86263d;--mist:#ffbd8677;--glow:#fff4bb}
+.invitation:before{display:none}
+.decor{animation:decor-arrive .8s ease-out both;contain:paint}
+.aurora{position:absolute;inset:-18%;background:radial-gradient(ellipse at 25% 17%,var(--mist),transparent 44%),radial-gradient(ellipse at 75% 75%,var(--glow),transparent 46%);opacity:.55;animation:aurora-drift 9s ease-in-out infinite alternate}
+.light-beam{position:absolute;top:-25%;bottom:-25%;left:-50%;width:45%;background:linear-gradient(90deg,transparent,#fff4cf70,transparent);transform:translateX(-60%) rotate(24deg);animation:light-pass 6.5s ease-in-out infinite;opacity:.6}
+.royal-rosette{position:absolute;width:88%;aspect-ratio:1;top:50%;left:50%;color:var(--gold);opacity:.13;transform:translate(-50%,-50%);pointer-events:none}
+.royal-rosette svg{width:100%;height:100%;animation:rosette-spin 55s linear infinite}
+.frame{filter:none;z-index:2}.watermark{opacity:.06}
+.edge-lights{position:absolute;inset:8% 12px;display:flex;justify-content:space-between;z-index:3}
+.light-string{display:flex;flex-direction:column;justify-content:space-around;align-items:center;width:6px}
+.light-string i{width:4px;height:4px;border-radius:50%;background:#fff7d4;box-shadow:0 0 4px 2px #ffce58,0 0 10px 3px #ffb84088;animation:edge-blink 2.8s ease-in-out infinite;animation-delay:var(--blink)}
+.falling-petals{position:absolute;inset:0;overflow:hidden;z-index:1}
+.falling-petals span{position:absolute;top:-5%;color:var(--petal-color);font-size:13px;opacity:0;animation:petal-fall var(--fall-time) linear infinite;animation-delay:var(--fall-delay)}
+.particle{z-index:3;filter:none;text-shadow:0 0 6px #ffc84b;font-size:calc(var(--size) + 2px)}
+.petal{opacity:.3}.dangling{animation:sway 3s ease-in-out infinite}.toran-flower{animation:toran-breathe 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.kalash-motion{transform-origin:50% 100%;transform-box:fill-box;animation:kalash-sway 4s ease-in-out infinite}
+.balloon-bunch{z-index:3;opacity:.8;animation:balloon-rise 5s ease-in-out infinite;top:24%}
+.scene-wipe{position:absolute;inset:0;z-index:5;pointer-events:none;background:linear-gradient(110deg,transparent 15%,#fff4c8b0 48%,transparent 80%);width:120%;animation:scene-sweep .85s cubic-bezier(.25,.65,.2,1) both;mix-blend-mode:screen}.scene-wipe.reverse{animation-name:scene-sweep-back}
+header,footer{position:relative;z-index:6}header{padding:0 2px 3px;gap:5px}header>div{gap:5px}.brand{font-size:12px;letter-spacing:.015em}.brand b{color:var(--gold);font-size:10px}
+header button{width:40px;height:40px;font-size:19px;background:var(--panel);box-shadow:0 2px 6px #5b25141a}header button:active,nav button:active,.action:active{transform:scale(.96)}
+.progress{height:3px;border-radius:8px;overflow:hidden;margin:3px 3px 2px}.progress i{width:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,#bd7c26,#ffe38a,#fffbdb)}.progress .playing{animation:slide-progress var(--slide-ms,4000ms) linear forwards}
+.page{animation:none;position:relative;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}.content{gap:clamp(6px,1.05dvh,12px);padding:7px 7px 9px;flex-shrink:0;min-width:0}
+/* Sequential entrances complete within the first 1.35s of each 5s scene. */
+.content>*{--entry-y:15px;animation:content-enter .56s cubic-bezier(.22,.72,.22,1) both;animation-delay:calc(.10s + var(--order,0)*.065s)}
+.content>:nth-child(1){--order:0}.content>:nth-child(2){--order:1}.content>:nth-child(3){--order:2}.content>:nth-child(4){--order:3}.content>:nth-child(5){--order:4}.content>:nth-child(6){--order:5}.content>:nth-child(7){--order:6}.content>:nth-child(8){--order:7}.content>:nth-child(9){--order:8}.content>:nth-child(10){--order:9}.content>:nth-child(11){--order:10}.content>:nth-child(12){--order:11}
+.backward .content>*{--entry-y:-12px}
+h1{font-size:clamp(29px,4.8dvh,45px);letter-spacing:-.025em;line-height:1.3}h2{font-size:clamp(23px,3.8dvh,34px)}p{font-size:clamp(13px,1.8dvh,16px)}.verse{font-size:clamp(11.5px,1.55dvh,14px)}
+.eyebrow{letter-spacing:.035em;background:var(--panel);box-shadow:0 2px 10px #b77a1714}.names{gap:2px}.names h2{animation:name-glow .8s ease-out both;animation-delay:.5s}.names h2:last-of-type{animation-delay:.7s}
+.sacred{position:relative;flex:none;animation:content-enter .55s ease-out both,pulse-halo 3.8s ease-in-out infinite 1s}.art-halo:before{content:'';position:absolute;width:70%;aspect-ratio:1;max-height:100%;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 70%);opacity:.5;animation:halo-breathe 4s ease-in-out infinite}.ceremony-art{position:relative;z-index:1;filter:drop-shadow(0 4px 5px #7c3b2626);animation:art-hover 3.8s ease-in-out infinite}.art-ring{transform-box:fill-box;transform-origin:center;animation:rosette-spin 24s linear infinite}.spark{animation:edge-blink 2s ease-in-out infinite}.flame{transform-box:fill-box;transform-origin:50% 100%;animation:flame-dance 1.1s ease-in-out infinite alternate}.wedding-art{animation:content-enter .6s ease-out both;animation-delay:.24s}.heart-art{animation:content-enter .6s ease-out both;animation-delay:.24s}.heart-art span{display:inline-block;animation:heart-beat 2.2s ease-in-out infinite}
+.chips>span,.dress,.paired>div,.route>div{box-shadow:0 3px 12px #773e1a12;border-color:color-mix(in srgb,var(--gold) 82%,#fff 18%)}.action,.smallaction{min-height:40px;box-shadow:0 3px 10px #64331326}.action{background:linear-gradient(135deg,#fff5c6 0%,#ffdb79 45%,#dba044 100%);font-size:12px}.dress{padding:7px 12px}.dress b{font-size:12px}.dress small{font-size:11px}.fine{font-size:11.5px}.qr{position:relative;overflow:hidden;flex:none}.qr:after{content:'';position:absolute;inset:0;border:1px solid #ffeaa0;pointer-events:none;border-radius:6px}.qr img{width:clamp(100px,16dvh,140px)}
+.dots button{height:27px;width:29px}.dots button:after{transition:width .25s,opacity .25s}.dots button.active:after{width:20px;background:var(--title)}nav button{min-height:44px;min-width:86px;font-size:12px;font-weight:700;box-shadow:0 3px 8px #603a1b15}nav>span{font-size:12px;font-variant-numeric:tabular-nums;letter-spacing:.06em}nav>span b{color:var(--gold)}
+.toast{position:absolute;left:28px;right:28px;bottom:104px;z-index:10;display:flex;justify-content:space-between;gap:9px;background:#391426;color:#fff7d8;border:1px solid #e7bb66;padding:12px;border-radius:10px;font-size:13px;box-shadow:0 4px 15px #0005}.toast span{font-size:18px}
+.hidden-tab *, .hidden-tab *:before,.hidden-tab *:after{animation-play-state:paused!important}
+@keyframes content-enter{0%{opacity:0;transform:translateY(var(--entry-y,15px)) scale(.985)}100%{opacity:1;transform:none}}
+@keyframes decor-arrive{from{opacity:.25;transform:scale(1.025)}to{opacity:1;transform:none}}
+@keyframes scene-sweep{from{transform:translateX(-125%) skewX(-7deg);opacity:0}25%{opacity:.8}to{transform:translateX(120%) skewX(-7deg);opacity:0}}
+@keyframes scene-sweep-back{from{transform:translateX(120%) skewX(7deg);opacity:0}25%{opacity:.8}to{transform:translateX(-125%) skewX(7deg);opacity:0}}
+@keyframes aurora-drift{to{transform:translate(4%,3%) scale(1.09);opacity:.8}}
+@keyframes light-pass{0%,18%{transform:translateX(-65%) rotate(24deg);opacity:0}30%{opacity:.6}62%,100%{transform:translateX(380%) rotate(24deg);opacity:0}}
+@keyframes rosette-spin{to{transform:rotate(360deg)}}
+@keyframes edge-blink{0%,100%{opacity:.35;transform:scale(.75)}50%{opacity:1;transform:scale(1.28)}}
+@keyframes petal-fall{0%{transform:translate(0,-3vh) rotate(0deg);opacity:0}12%{opacity:.52}85%{opacity:.45}100%{transform:translate(var(--drift),108dvh) rotate(300deg);opacity:0}}
+@keyframes toran-breathe{50%{transform:scale(1.12);opacity:.9}}
+@keyframes kalash-sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes balloon-rise{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-16px) rotate(4deg)}}
+@keyframes halo-breathe{50%{transform:scale(1.17);opacity:.8}}
+@keyframes pulse-halo{50%{box-shadow:0 0 22px #f9c956aa}}
+@keyframes name-glow{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
+@keyframes art-hover{50%{transform:translateY(-7px) rotate(1deg)}}
+@keyframes flame-dance{0%{transform:scale(.92,1.02) rotate(-3deg)}100%{transform:scale(1.08,.94) rotate(3deg)}}
+@keyframes heart-beat{0%,48%,100%{transform:scale(1)}13%,35%{transform:scale(1.22)}}
+@keyframes slide-progress{to{transform:scaleX(1)}}
+@media(max-width:767px) and (orientation:portrait){.invitation{width:100%;height:100%;box-shadow:none}}
+@media(max-height:700px){.invitation{padding-top:max(33px,calc(env(safe-area-inset-top) + 23px));padding-inline:20px;padding-bottom:max(10px,env(safe-area-inset-bottom))}.content{gap:5px;padding:5px 4px}.art-halo{height:106px;min-height:85px}.wedding-art{height:48px}.sacred{width:36px;height:36px;font-size:26px}h1{font-size:29px}h2{font-size:24px}.verse{font-size:11.5px}.qr img{width:100px}.dress{padding:4px 8px}.action,.smallaction{min-height:34px}.dots button{height:23px}.location .content{gap:4px}}
+@media(max-width:360px){.invitation{padding-inline:18px}.brand{font-size:11px}.actions .action{white-space:normal}.names p{font-size:11px}.verse{font-size:11px}.chips>span{padding:4px 7px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0ms!important;animation-iteration-count:1!important;transition:none!important}.scene-wipe,.falling-petals,.light-beam{display:none}.content>*{opacity:1;transform:none}.progress .playing{animation-duration:var(--slide-ms,4000ms)!important}}
+
+/* V6: fixed readable text, rich dark gradients, animation only on decoration. */
+.invitation{--ink:#fff5d9;--title:#ffe397;--gold:#f5cc6d;--panel:#220b2780;--light:#b42a5d;--deep:#310822;--mist:#ff68824d;--glow:#eaa33f55;background:radial-gradient(ellipse at 50% 20%,var(--light),transparent 65%),linear-gradient(150deg,var(--light),var(--deep) 78%);padding-top:max(44px,calc(env(safe-area-inset-top) + 27px));padding-bottom:max(18px,calc(env(safe-area-inset-bottom) + 10px));}
+.welcome{--light:#aa2559;--deep:#35061e;--panel:#490d30b8;--accent:#ff9ab6;--mist:#e4599055;--glow:#efb84055}
+.haldi{--light:#c26a08;--deep:#622300;--ink:#fff9dc;--title:#fff09c;--gold:#ffd66b;--panel:#542700b8;--accent:#ffbd2f;--mist:#ffb20c55;--glow:#ffcf5244}
+.mehndi{--light:#237f42;--deep:#052d24;--ink:#f2ffdd;--title:#f4eaa0;--gold:#e7cb6f;--panel:#0a3927cc;--accent:#9cde60;--mist:#91bf4d50;--glow:#bde96544}
+.wedding{--light:#b12239;--deep:#350515;--ink:#fff3da;--title:#ffe39c;--gold:#ffcf6d;--panel:#4c091bc7;--accent:#ff7871;--mist:#ef473c45;--glow:#edb74b44}
+.vidai{--light:#a32b75;--deep:#320c54;--ink:#fff0f8;--title:#ffe2a4;--gold:#f9c989;--panel:#421044c7;--accent:#ff8fc4;--mist:#e65da44d;--glow:#e9a0e344}
+.location{--light:#285a9a;--deep:#101938;--ink:#fff4d9;--title:#ffe4a0;--gold:#f5cc70;--panel:#142d56cc;--accent:#78b9ff;--mist:#5995dc55;--glow:#f5c56b33}
+.aurora{opacity:.30;animation:aurora-drift 9s ease-in-out infinite alternate}.light-beam{opacity:.28}.scene-wipe{z-index:1;opacity:.35}.page{z-index:4;flex:1;min-height:0;position:relative;display:block;overflow:hidden;overscroll-behavior:none;touch-action:pan-x;scrollbar-width:none;animation:none}.page::-webkit-scrollbar{display:none}
+.content{--fit:1;position:absolute;left:50%;top:50%;width:100%;max-width:440px;margin:0;transform:translate(-50%,-50%) scale(var(--fit));transform-origin:center;display:flex;flex-direction:column;align-items:center;gap:clamp(6px,1.1dvh,11px);padding:6px 4px;min-width:0}
+.content>*{animation:none!important;opacity:1;transform:none;flex-shrink:0}.names h2{animation:none!important;opacity:1;transform:none}.page h1,.page h2{text-shadow:0 2px 3px #0006;letter-spacing:0}.page p{overflow-wrap:break-word}.eyebrow{font-size:12px;padding:4px 12px;letter-spacing:0}.verse{font-size:clamp(12px,1.7dvh,15px)}.blessing{font-size:clamp(13px,1.9dvh,16px)}.names{gap:4px}.names h2{font-size:clamp(26px,4.1dvh,38px)}.family-line{width:100%;border:1px solid #ffdb8355;border-radius:10px;padding:6px;background:var(--panel)}.family-line p{font-size:clamp(12px,1.8dvh,15px);line-height:1.48}.family-line p+p{margin-top:3px}.names .ornament{margin:3px auto}.ornament{width:62%;gap:0}.ornament i{height:1px}.ornament i:first-child{background:linear-gradient(90deg,transparent,var(--gold))}.ornament i:last-child{background:linear-gradient(90deg,var(--gold),transparent)}
+header{padding:0 1px 4px;gap:5px}header button{width:auto;height:auto;min-height:32px;padding:4px 9px;border-radius:16px;font-size:11px;white-space:nowrap;box-shadow:none}header .brand{font-size:12px;white-space:nowrap}.dots{display:none}footer{padding-top:5px}nav button{min-height:36px;min-width:75px;padding:5px 13px}.progress{margin:4px 2px;height:2px}.chips>span{padding:5px 10px}.tagline{font-style:normal}.dress{border-radius:15px;padding:7px 11px}.count span{min-width:38px}.closing{font-size:clamp(12px,1.75dvh,15px);line-height:1.5}.art-halo{height:clamp(120px,27dvh,225px);min-height:0;background:radial-gradient(ellipse,#ffde7044,transparent 70%)}.mehndi .art-halo{background:radial-gradient(ellipse,#c5f18a55,transparent 70%)}.ceremony-art{width:min(90%,240px);filter:drop-shadow(0 7px 9px #0005)}.wedding-art{height:clamp(54px,11dvh,88px)}.heart-art{color:#ffb1cb}.heart-art span{color:#ff89b5}.paired>div,.route>div{border-radius:12px}.paired>div{padding:10px 6px}.invite p{font-size:clamp(12px,1.7dvh,15px);line-height:1.5}.route>div{padding:7px 9px}.route p{font-size:clamp(12px,1.7dvh,14px)}.route a{display:inline-block;margin-top:4px;text-decoration:underline;text-underline-offset:3px;color:var(--title)}.route-divider{height:10px;width:1px;background:var(--gold);justify-self:center}.qr img{width:clamp(76px,14dvh,115px)}.location .content{gap:6px}.location .fine{font-size:11px}.action{min-height:35px;white-space:normal!important}.actions .action{font-size:11px}.fine{line-height:1.5}
+/* Rich ceremony-specific inner borders. */
+.invitation:after{content:'';position:absolute;inset:17px;border:1px solid #ffe7a45c;border-radius:20px 20px 13px 13px;pointer-events:none;z-index:-1}.haldi:after{border-style:dotted;border-width:2px;border-color:#ffd75d99}.mehndi:after{border:3px double #e9e8a17a;border-radius:90px 90px 20px 20px}.wedding:after{border:3px double #ffd78199;border-radius:40px 40px 14px 14px}.vidai:after{border:2px dashed #f8c5c68c;border-radius:30px}.location:after{border:2px double #ffd27f88;border-radius:12px}.welcome:after{border:3px double #ffd68b9c;border-radius:54px 54px 20px 20px}
+@media(max-height:700px){.invitation{padding-top:max(33px,calc(env(safe-area-inset-top) + 23px));padding-bottom:max(12px,env(safe-area-inset-bottom));padding-inline:22px}.content{gap:5px;padding:3px 2px}.art-halo{height:125px}.wedding-art{height:46px}.location .content{gap:4px}.qr img{width:86px}.paired>div{padding:6px}.dress{padding:5px 8px}.family-line{padding:4px}.names{gap:2px}.invite p{margin:3px 0}}
+@media(max-width:350px){.invitation{padding-inline:19px}.content{padding-inline:2px}.chips>span{font-size:11px;padding-inline:6px}.brand{font-size:11px!important}header button{font-size:10px;padding-inline:7px}}
+@media(orientation:landscape) and (max-height:550px){.invitation{width:min(100vw,440px);padding-top:27px;padding-bottom:8px}.content{gap:4px}.art-halo{height:75px}.qr img{width:64px}}
+.heart-art span{animation:heart-beat 2.2s ease-in-out infinite}.wedding-art .flame{animation:flame-dance 1.1s ease-in-out infinite alternate}.haldi .ceremony-art,.mehndi .ceremony-art{animation:art-hover 3.8s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.heart-art span,.wedding-art .flame,.haldi .ceremony-art,.mehndi .ceremony-art{animation:none!important}}
+
+.page{overflow:hidden;overflow:clip;touch-action:pan-y}.haldi .chips>span{background:linear-gradient(135deg,#673000,#8b4505)}.mehndi .chips>span{background:linear-gradient(135deg,#103d28,#245d32)}.wedding .chips>span{background:linear-gradient(135deg,#510a20,#77142b)}
+/* V7: ceremony-led palettes, restrained metallic accents and readable typography.
+   Layout, text and motion are intentionally independent of the palette. */
+.stage{background:radial-gradient(ellipse at center,#51443b,#211b19 80%)}
+.invitation{--light:#fff8e9;--deep:#d3ab68;--ink:#563629;--title:#772a37;--gold:#956b32;--panel:#fff8eae8;--accent:#aa4954;--mist:#dba46136;--glow:#fff6da55;--middle:#f1debc;--edge:#a57537;--button:#773141;--buttonInk:#fff8e9;--rule:#9e78375c;--highlight:#fff5ce;--metal1:#986523;--metal2:#e9c981;--metal3:#b4873c;--metal4:#fff0ba;--shadow:#52341916;background:radial-gradient(ellipse at 50% 40%,var(--light) 4%,transparent 77%),linear-gradient(152deg,var(--deep) 0%,var(--middle) 36%,var(--light) 58%,var(--deep) 100%);color:var(--ink)}
+/* Ivory paper, antique gold and vermilion, like a traditional invitation. */
+.welcome{--light:#fff8e9;--middle:#f1dfb8;--deep:#dab67c;--ink:#54352a;--title:#782b36;--gold:#99703a;--panel:#fffaf0e8;--accent:#a84651;--mist:#b9603d22;--glow:#ffefbf60;--button:#7c3440;--rule:#9b703c55}
+/* Turmeric and marigold, not brown. */
+.haldi{--light:#fff4c2;--middle:#f9dc75;--deep:#e8a329;--ink:#573704;--title:#784207;--gold:#98600c;--panel:#fff5d1ea;--accent:#c86d11;--mist:#f3aa2e30;--glow:#fff8cb70;--button:#80500c;--rule:#a16a1855;--metal1:#996017;--metal2:#f6d672;--metal3:#b67a19;--metal4:#fff2a8}
+/* Henna green and fresh leaves with a luminous sage centre. */
+.mehndi{--light:#e8edce;--middle:#b8cf9b;--deep:#739463;--ink:#25462c;--title:#234d33;--gold:#657340;--panel:#f3f5dfed;--accent:#547f42;--mist:#7798492e;--glow:#f3f7d55e;--button:#345d3f;--rule:#526f4566;--metal1:#6b783e;--metal2:#e4d28c;--metal3:#a59a51;--metal4:#fff0bc}
+/* Classic bridal silk: deep red, wine and restrained gold. */
+.wedding{--light:#a3323e;--middle:#811f31;--deep:#480e21;--ink:#fff3e4;--title:#f8d68d;--gold:#e6bb72;--panel:#551326b3;--accent:#d5786c;--mist:#dc755129;--glow:#e7b87133;--button:#f0d095;--buttonInk:#5e172b;--rule:#e3ba6f66;--metal1:#ac762d;--metal2:#f8df9f;--metal3:#ce9f51;--metal4:#fff0be}
+/* Gentle rose and warm blush for farewell and reception. */
+.vidai{--light:#fff0e9;--middle:#edc6c3;--deep:#c78c95;--ink:#5d303c;--title:#80364e;--gold:#98684d;--panel:#fff3edeb;--accent:#b45773;--mist:#c47b932e;--glow:#ffe8d65e;--button:#84415a;--rule:#a5667560;--metal1:#a36a46;--metal2:#eccaa2;--metal3:#b18a63;--metal4:#fff0d2}
+/* Warm sandstone and heritage gold for the journey. */
+.location{--light:#fffaed;--middle:#e9dcc0;--deep:#bba27b;--ink:#483e2f;--title:#6b4931;--gold:#856637;--panel:#fffaf1ee;--accent:#8d6949;--mist:#b58d5933;--glow:#fff2d259;--button:#705134;--rule:#8c724d66;--metal1:#8b6b35;--metal2:#e2c58b;--metal3:#ab8847;--metal4:#fff1c4}
+.invitation:after{border-color:var(--rule)}
+.page h1,.page h2{color:var(--title);text-shadow:none}
+.wedding .page h1,.wedding .page h2{text-shadow:0 2px 6px #33081544}
+.eyebrow,.chips>span,.dress,.paired>div,.route>div,.family-line,.count span{background:var(--panel);border:1px solid var(--rule);box-shadow:0 3px 9px var(--shadow)}
+.haldi .chips>span,.mehndi .chips>span,.wedding .chips>span{background:var(--panel)}
+.eyebrow{color:var(--title);font-weight:700}.tagline{color:var(--title)}
+header button,nav button,.action,.smallaction{background:var(--button);color:var(--buttonInk);border:1px solid var(--button);box-shadow:0 2px 6px var(--shadow)}
+header button{background:var(--panel);color:var(--ink);border-color:var(--rule)}
+nav>span b,.brand b{color:var(--title)}
+.progress{background:var(--rule)}.progress i{background:linear-gradient(90deg,var(--gold),var(--title))}
+.wedding .progress i{background:linear-gradient(90deg,#bc8c42,#ffe8af)}
+.closing{border-color:var(--rule)}.route a{color:var(--title)}
+.royal-rosette{opacity:.10}.watermark{opacity:.035}.aurora{opacity:.25}.light-beam{opacity:.16}
+.light-string i{width:3px;height:3px;background:#fff5d7;box-shadow:0 0 3px 1px #d3a65a,0 0 6px 2px #edc67c55}
+.falling-petals span{font-size:11px}.particle{color:var(--gold);text-shadow:0 0 4px #fff3c7;opacity:.60}.balloon-bunch{opacity:.55}
+.art-halo{background:radial-gradient(ellipse,#fff5bc88,transparent 70%)}.mehndi .art-halo{background:radial-gradient(ellipse,#f2f5d2aa,transparent 70%)}
+.ceremony-art{filter:drop-shadow(0 5px 8px #46331924)}
+.heart-art{color:#b9788b}.heart-art span{color:#b45473;text-shadow:none}
+
+.wedding nav button{color:var(--buttonInk)}
+
+/* V8 — clean invitation typography, no timer or navigation buttons.
+   Text never moves; all additional motion is on decorative layers only. */
+.slide-footer{display:flex;align-items:center;justify-content:space-between;padding:3px 28px 0;color:var(--title);font-size:10px;letter-spacing:.06em;font-weight:600;opacity:.85;flex:none}
+.welcome .content{gap:clamp(10px,1.8dvh,17px)}
+.welcome .names{gap:4px}.welcome .names h2{font-size:clamp(30px,5.3dvh,49px)}
+.welcome .closing{max-width:320px;line-height:1.65;padding-top:10px}
+.family-line{padding:9px 6px}.family-line b{color:var(--title);font-weight:700}
+.invite p b{display:block;color:var(--title);font-size:1.04em;margin-bottom:1px}
+.invite p{margin:5px 0}.dress b{font-size:11px;letter-spacing:.01em}.dress small{font-size:11px;font-weight:500}
+/* Continuous, phase-staggered decorative movement. No layout or text animation. */
+.decor{animation:decor-arrive .65s ease-out both}
+.scene-wipe{animation-duration:.75s;opacity:.45}
+.aurora{animation:aurora-drift 6s ease-in-out infinite alternate;opacity:.36}
+.light-beam{animation:light-pass 4.4s ease-in-out infinite;opacity:.22}
+.royal-rosette svg{animation:rosette-spin 34s linear infinite}
+.royal-rosette{opacity:.14}
+.dangling{animation:sway 2.8s ease-in-out infinite}
+.toran-flower{animation:flower-dance 2.7s ease-in-out infinite}
+.kalash-motion{animation:kalash-sway 3.2s ease-in-out infinite}
+.balloon-bunch{animation:balloon-rise 3.8s ease-in-out infinite;opacity:.65}
+.falling-petals span{animation-duration:calc(var(--fall-time) * .82);font-size:12px}
+.light-string i{animation:edge-blink 1.9s ease-in-out infinite;animation-delay:var(--blink)}
+.particle.sparkle{animation:twinkle 2.2s ease-in-out infinite;animation-delay:var(--delay)}
+.haldi .ceremony-art,.mehndi .ceremony-art{animation:art-hover 2.8s ease-in-out infinite}
+.art-ring{animation:rosette-spin 15s linear infinite}
+.art-halo:before{animation:halo-breathe 2.9s ease-in-out infinite}
+.wedding .wedding-art{animation:art-hover 3.4s ease-in-out infinite!important}
+.wedding-art .flame{animation:flame-dance .85s ease-in-out infinite alternate}
+.vidai .heart-art{animation:art-hover 3.2s ease-in-out infinite!important}
+@keyframes flower-dance{0%,100%{transform:rotate(-5deg) scale(.96)}50%{transform:rotate(5deg) scale(1.12);opacity:.9}}
+@media(max-height:700px){.welcome .content{gap:7px}.family-line{padding:5px}.invite p{margin:3px 0}.slide-footer{padding-inline:22px}}
+@media(prefers-reduced-motion:reduce){.decor,.decor *,.scene-wipe,.art-halo:before,.ceremony-art,.ceremony-art *,.wedding-art,.wedding-art *,.heart-art,.heart-art *{animation:none!important}.scene-wipe{display:none}}
+
+/* V9: uninterrupted four-second slideshow; static text and decorative scene reveal. */
+header{justify-content:center;min-height:18px}
+.scene-wipe{animation-duration:.65s}
+
+/* V10: richer ceremony art, no repeated branding or page counters. */
+.haldi .content,.mehndi .content{gap:clamp(7px,1.45dvh,14px)}
+.haldi .art-halo,.mehndi .art-halo{height:clamp(155px,32dvh,280px);width:100%}
+.haldi .enhanced-art,.mehndi .enhanced-art{width:100%;max-width:340px;height:100%;animation:art-hover 3s ease-in-out infinite!important;overflow:visible}
+.ceremony-quote{width:92%;font-size:clamp(13px,2dvh,17px);font-weight:600;line-height:1.65;color:var(--title);border-block:1px solid var(--rule);padding:7px 1px;background:linear-gradient(90deg,transparent,#fff8d34a,transparent)}
+.ceremony-atmosphere{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}
+.ceremony-atmosphere i{position:absolute;left:var(--x);top:var(--y);width:var(--sz);height:var(--sz);animation:ceremony-drift var(--duration) ease-in-out var(--delay) infinite;will-change:transform,opacity}
+.haldi-atmosphere i{border-radius:50%;background:#eaa318;box-shadow:0 0 5px #ffd344;opacity:.5}
+.haldi-atmosphere i:nth-child(3n){background:#ffd843;box-shadow:0 0 8px #d89013}
+.mehndi-atmosphere i{border-radius:100% 0 100% 0;background:linear-gradient(140deg,#b8d578,#477d39);height:calc(var(--sz)*1.8);box-shadow:0 1px 2px #3b713740}
+.powder-grain{animation:powder-burst 2.4s cubic-bezier(.16,.57,.45,1) infinite;animation-delay:var(--delay);transform-box:fill-box;transform-origin:center}
+.henna-leaves,.henna-cones{transform-box:fill-box;transform-origin:center bottom;animation:henna-sway 2.8s ease-in-out infinite}.henna-cones{animation-delay:-1.2s}
+.wedding-ensemble{height:clamp(84px,17dvh,140px);width:100%;position:relative;display:grid;place-items:center}
+.wedding-ensemble .varmala{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 3px 5px #25071266)}
+.wedding-ensemble .wedding-art{height:54%;width:37%;position:absolute;top:26%;left:31.5%;animation:none!important;filter:drop-shadow(0 2px 3px #3e1012)}
+.mala-sway{transform-box:fill-box;transform-origin:50% 0%;animation:mala-swing 2.8s ease-in-out infinite}.mala-1{animation-delay:-1.4s}
+.mala-glint{animation:mala-shine 1.65s ease-in-out infinite;filter:drop-shadow(0 0 3px #fff4b4)}
+@keyframes ceremony-drift{0%,100%{transform:translate(0,14px) rotate(-20deg);opacity:.22}50%{transform:translate(var(--drift),-20px) rotate(65deg);opacity:.78}}
+@keyframes powder-burst{0%{transform:translate(0,0) scale(.3);opacity:0}14%{opacity:.95}58%{transform:translate(var(--dx),var(--dy)) scale(.8);opacity:.8}100%{transform:translate(var(--dx),12px) scale(.35);opacity:0}}
+@keyframes henna-sway{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}
+@keyframes mala-swing{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+@keyframes mala-shine{0%,100%{opacity:.12}45%{opacity:1}65%{opacity:.65}}
+@media(max-height:700px){.haldi .content,.mehndi .content{gap:6px}.haldi .art-halo,.mehndi .art-halo{height:clamp(120px,29dvh,185px)}.ceremony-quote{font-size:13px;padding:4px 1px}.wedding-ensemble{height:clamp(67px,15dvh,98px)}}
+@media(prefers-reduced-motion:reduce){.ceremony-atmosphere i,.powder-grain,.henna-leaves,.henna-cones,.mala-sway,.mala-glint,.haldi .enhanced-art,.mehndi .enhanced-art{animation:none!important}.powder-grain{opacity:0}}
+/* Leave a little breathing room around the corner kalash on tall phones. */
+@media(min-height:701px){.haldi .art-halo{height:clamp(150px,28dvh,250px)}.haldi .content{gap:clamp(7px,1.15dvh,11px)}}
+
+/* V11: inset portrait video frame, ceremonial typography, hanging flower strands. */
+.stage{padding:max(7px,env(safe-area-inset-top)) max(6px,env(safe-area-inset-right)) max(7px,env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left));background:radial-gradient(ellipse at center,#46332c,#171315 85%)}
+.invitation{width:min(100%,calc((100dvh - max(7px,env(safe-area-inset-top)) - max(7px,env(safe-area-inset-bottom))) * 9 / 16));height:auto;aspect-ratio:9 / 16;max-height:100%;border-radius:13px;box-shadow:0 8px 35px #0009;container-type:size;padding:0;}
+.page{position:absolute;inset:8.5% 7.5% 5.2%;}
+body{font-family:'Noto Sans Devanagari','Nirmala UI','Mangal',sans-serif;font-weight:450}
+.page h1,.page h2,.tagline,.verse,.ceremony-quote{font-family:'Noto Serif Devanagari','Nirmala UI','Kokila','Mangal',serif;letter-spacing:0}
+.page h1{font-size:clamp(22px,7.2cqw,42px);font-weight:700;line-height:1.34}.page h2{font-size:clamp(20px,6.5cqw,34px);line-height:1.34}.welcome .names h2{font-size:clamp(27px,9.4cqw,47px)}.vidai .page h1{font-size:clamp(21px,6.5cqw,35px)}
+.page p{line-height:1.55}.names>span{font-family:'Noto Serif Devanagari','Nirmala UI',serif;font-style:normal;font-weight:600}.dress b,.dress small{font-family:'Lora',Georgia,serif;letter-spacing:.015em}.dress b{font-weight:700}.dress small{font-weight:500}
+.haldi .art-halo,.mehndi .art-halo{height:clamp(100px,25cqh,235px);min-height:0}.wedding-ensemble{height:clamp(72px,19cqh,145px)}.wedding-ensemble .wedding-art{width:30%;height:43%;left:35%;top:38%}.wedding-ensemble .varmala{overflow:visible}
+.location .qr{padding:3px;border:2px solid var(--gold);background:#fff;box-shadow:0 0 0 3px #f8d8f4;border-radius:8px;flex:none}.location .qr img{width:clamp(112px,39cqw,175px);height:auto;image-rendering:pixelated}.location .content{gap:5px}.location .route>div{padding:4px 6px}.location .route a{display:inline-block;padding:3px 0}.location .fine{font-weight:600}
+.hanging-mala{transform-box:fill-box;transform-origin:50% 0%;animation:hanging-bloom 3s ease-in-out infinite}.border-sheen{stroke-dashoffset:0;animation:rim-travel 5s linear infinite;opacity:.9}.mala-sway{animation-duration:3.4s}.mala-glint{animation-duration:1.5s}.scene-wipe{animation-duration:.48s}.toran-flower{transform-box:fill-box;transform-origin:center}
+@keyframes hanging-bloom{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}@keyframes rim-travel{to{stroke-dashoffset:-204}}
+@media(max-height:700px){.welcome .content{gap:6px}.location .content{gap:3px}.location .qr img{width:clamp(106px,36cqw,142px)}}
+@media(prefers-reduced-motion:reduce){.hanging-mala,.border-sheen,.mala-glint,.mala-sway{animation:none!important}}
+/* QR modules stay on whole-pixel boundaries at common phone widths. */
+.location .qr img{width:165px;max-width:100%;image-rendering:pixelated}.location .qr{max-width:100%}
+@container (max-width:350px){.location .qr img{width:132px}}
+@container (max-width:290px){.location .qr img{width:132px}.location .content{gap:3px}}
+
+/* V12 — a bespoke silk-and-gold wedding card. Other scenes are unchanged. */
+.wedding{--light:#8e2945;--middle:#68182f;--deep:#350b20;--title:#ffe0a0;--ink:#fff3e1;--gold:#e7be77;background:radial-gradient(ellipse at 50% 23%,#a63c53 0%,transparent 53%),linear-gradient(155deg,#741c38 0%,#4a1029 65%,#300a1c 100%)}
+.wedding .page{inset:8% 7.7% 5.5%}
+.wedding .content{gap:clamp(4px,1.1cqh,10px);padding:2px 0}
+.wedding .vivah-kicker{font-size:clamp(11px,3.35cqw,16px);font-weight:600;color:#ffe0a0;letter-spacing:.015em;margin:0}
+.wedding .page .vivah-heading{font-size:clamp(29px,9.7cqw,51px);line-height:1.21;color:#ffe7ad;font-weight:700;margin:0;text-shadow:0 2px 10px #26061680}
+.royal-mandap{display:block;width:100%;max-width:370px;height:auto;aspect-ratio:320/134;overflow:visible;flex:none;filter:drop-shadow(0 3px 3px #2e091955)}
+.vivah-varmala{transform-box:fill-box;transform-origin:50% 0%;animation:vivah-garland-sway 2.8s ease-in-out infinite}
+.vivah-spark{transform-box:fill-box;transform-origin:center;animation:vivah-glint 1.65s ease-in-out infinite}
+.vivah-fire{transform-box:fill-box;transform-origin:center bottom;animation:vivah-flicker .85s ease-in-out infinite alternate}
+.vivah-names{width:100%;display:flex;flex-direction:column;align-items:center;gap:3px;border-block:1px solid #e7bf7555;padding:clamp(5px,1cqh,9px) 2px;background:linear-gradient(90deg,transparent,#26091b35 20%,#26091b35 80%,transparent)}
+.vivah-person{width:100%}.wedding .vivah-person h2{font-size:clamp(25px,8.5cqw,43px);font-weight:700;line-height:1.22;margin:0 0 3px;color:#fff0c3;letter-spacing:0}
+.wedding .vivah-person p{font-size:clamp(10px,3.4cqw,15.5px);line-height:1.65;margin:0;color:#fff3e1;font-weight:500}.vivah-person b{color:#ffdb93;font-weight:700}
+.vivah-union{width:74%;display:flex;align-items:center;gap:10px;justify-content:center;color:#f8d291;font-family:'Noto Serif Devanagari','Nirmala UI',serif;font-weight:600;font-size:clamp(13px,4.2cqw,19px)}.vivah-union i{flex:1;height:1px;background:linear-gradient(90deg,transparent,#e6bd75)}.vivah-union i:last-child{transform:rotate(180deg)}
+.vivah-date{width:100%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:5px;border:1px solid #dfb36c;border-radius:5px;padding:clamp(5px,1.2cqh,9px) 5px;background:linear-gradient(110deg,#c99b56,#ffe7af 48%,#d5a85d);color:#48162a;box-shadow:0 3px 11px #20051444;font-size:clamp(10px,3.3cqw,15px);font-weight:600}.vivah-date strong{font-family:'Noto Serif Devanagari','Nirmala UI',serif;font-size:clamp(13px,4.2cqw,20px);border-inline:1px solid #81542c66;padding-inline:7px;white-space:nowrap}
+.vivah-attire{display:flex;align-items:center;justify-content:center;gap:8px;color:#ffe2b0;font-family:'Lora',Georgia,serif;text-align:left}.vivah-attire b,.vivah-attire small{display:block;font-size:clamp(9px,2.8cqw,13px);line-height:1.4}.vivah-attire small{font-weight:500;color:#f6e8d9}.vivah-swatches{display:flex;gap:3px}.vivah-swatches i{width:clamp(12px,4.1cqw,20px);aspect-ratio:1;border-radius:50%;border:1px solid #f4d290;background:#8e2341}.vivah-swatches i+i{background:linear-gradient(145deg,#fff0b7,#c18a39)}
+.wedding .vivah-wish{font-size:clamp(10px,3.15cqw,14px);color:#f5d9aa;line-height:1.5;margin:0}
+.wedding .royal-rosette{opacity:.11}.wedding .light-beam{opacity:.15}.wedding .falling-petals span{opacity:.5}.wedding .border-sheen{stroke-width:1.65;animation-duration:3.4s}
+@keyframes vivah-garland-sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+@keyframes vivah-glint{0%,100%{opacity:.15;transform:scale(.55)}45%{opacity:1;transform:scale(1.2)}}
+@keyframes vivah-flicker{from{transform:scale(.96,.91)}to{transform:scale(1.03,1.07)}}
+@media(prefers-reduced-motion:reduce){.vivah-varmala,.vivah-spark,.vivah-fire{animation:none!important}}
+
+/* V14 — uninterrupted scene-to-scene crossfade, fixed text, balanced full cards. */
+.slide-frame{position:relative;isolation:isolate;width:min(100%,calc((100dvh - max(7px,env(safe-area-inset-top)) - max(7px,env(safe-area-inset-bottom))) * 9 / 16));aspect-ratio:9/16;max-height:100%;border-radius:13px;overflow:hidden;box-shadow:0 8px 35px #0009;touch-action:pan-y;background:#f1dfb8}
+.slide-frame>.invitation{position:absolute;inset:0;width:100%;height:100%;max-height:none;aspect-ratio:auto;border-radius:0;box-shadow:none;transition:none;z-index:2}
+.slide-frame>.scene-outgoing{z-index:1;pointer-events:none}
+.slide-frame>.scene-entering{animation:invitation-crossfade var(--fade-ms,650ms) cubic-bezier(.4,0,.2,1) both;will-change:opacity}
+.slide-frame .decor{animation:none}
+@keyframes invitation-crossfade{from{opacity:0}to{opacity:1}}
+.content{min-height:calc(100% - 8px);justify-content:space-evenly}
+.ceremony-note{width:100%;max-width:340px;padding:clamp(4px,.8cqh,8px) 5px;border-block:1px solid var(--rule);color:var(--title);font-family:'Noto Serif Devanagari','Nirmala UI','Mangal',serif;font-weight:600;font-size:clamp(11px,3.45cqw,16px);line-height:1.6}
+.wedding .ceremony-note{color:#ffe1a6;border-color:#e7bf7555;font-size:clamp(10px,3.25cqw,15px)}
+.location .ceremony-note{margin-top:2px;padding:6px 4px}
+.location .fine{font-size:clamp(10px,3.05cqw,13px)}
+@media(prefers-reduced-motion:reduce){.slide-frame>.scene-entering{animation:none!important}}
+/* Leave room for the artwork's floating animation without touching date chips. */
+.haldi .enhanced-art,.mehndi .enhanced-art{height:90%;max-height:100%}
+
+/* V15 — turmeric and henna ceremony cards: rich silk gradients, ornamental details. */
+.haldi{--light:#fff6cc;--middle:#f4d678;--deep:#e9a23d;--title:#753b0c;--ink:#573608;--rule:#a46c285c;--gold:#a86d20;background:radial-gradient(ellipse at 50% 34%,#fff8db 0%,transparent 65%),linear-gradient(155deg,#f6d573,#fff1b6 48%,#e5a13d)}
+.mehndi{--light:#f1f4d6;--middle:#c5d5a4;--deep:#7ca16e;--title:#214c33;--ink:#25452c;--gold:#637a43;--rule:#547b4866;background:radial-gradient(ellipse at 50% 35%,#f3f5dc 0%,transparent 67%),linear-gradient(155deg,#b6ce99,#e6edc9 48%,#7da26e)}
+.haldi .content,.mehndi .content{gap:clamp(4px,.85cqh,8px);padding:4px 0}
+.ritual-kicker{font-family:'Noto Serif Devanagari','Mangal',serif;font-size:clamp(11px,3.4cqw,16px);font-weight:600;color:var(--title);border-bottom:1px solid var(--rule);padding:0 12px 3px}
+.page .ritual-title{font-size:clamp(27px,9.2cqw,46px);line-height:1.26;margin:0;font-weight:700}
+.haldi .ritual-art,.mehndi .ritual-art{height:clamp(110px,28cqh,250px);width:100%;background:none;isolation:isolate}
+.ritual-art:after{content:'';position:absolute;inset:7% 13%;z-index:-1;border-radius:50%;border:1px solid var(--rule);box-shadow:0 0 0 5px #ffffff30,inset 0 0 25px #ffffff70;opacity:.7;pointer-events:none}
+.haldi .ritual-art:after{background:radial-gradient(ellipse,#fff9db88,#f6c75a33)}
+.mehndi .ritual-art:after{background:radial-gradient(ellipse,#f6f9dc88,#83a36422)}
+.haldi .ritual-art .enhanced-art,.mehndi .ritual-art .enhanced-art{height:100%;max-width:370px;filter:drop-shadow(0 4px 5px #50370e22)}
+.ritual-date{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;width:100%;padding:clamp(6px,1.2cqh,10px) 4px;gap:4px;border:1px solid var(--gold);border-radius:5px;color:var(--title);background:linear-gradient(110deg,#fff9dfb0,#fffdf0ed,#fff8d3b0);box-shadow:0 3px 8px #42340e18,inset 0 0 0 2px #ffffff55;font-size:clamp(10px,3.15cqw,14px);font-weight:600}
+.mehndi .ritual-date{background:linear-gradient(110deg,#d7e4bc,#fbfbe8,#d7e4bc)}
+.ritual-date strong{padding-inline:6px;border-inline:1px solid var(--rule);font-family:'Noto Serif Devanagari','Mangal',serif;font-size:clamp(12px,4.1cqw,19px);white-space:nowrap}
+.haldi .ceremony-quote,.mehndi .ceremony-quote{font-size:clamp(12px,4.05cqw,18px);line-height:1.65;padding:5px 0;border-block:1px solid var(--rule);width:100%;color:var(--title)}
+.ritual-dress{width:86%;justify-content:center;gap:10px;border-radius:6px;background:#fffcf0bb;padding:7px 8px;box-shadow:inset 0 0 0 2px #ffffff55,0 3px 8px #4c3a1012}
+.ritual-swatches{display:flex;gap:4px}.ritual-swatches i{width:clamp(15px,5.2cqw,24px);height:auto;aspect-ratio:1;border:1px solid #fff8;box-shadow:0 0 0 1px var(--rule)}
+.ritual-dress b{font-size:clamp(11px,3.5cqw,15px)}.ritual-dress small{font-size:clamp(10px,3.2cqw,14px)}
+.haldi .closing,.mehndi .closing{width:100%;font-size:clamp(11px,3.5cqw,15px);line-height:1.65;padding-top:5px}
+.ritual-floral-arch,.ritual-henna-ring{transform-box:fill-box;transform-origin:center;animation:ritual-breathe 3.4s ease-in-out infinite alternate}
+@keyframes ritual-breathe{from{opacity:.65;transform:scale(.98)}to{opacity:1;transform:scale(1.015)}}
+.haldi .hanging-mala,.mehndi .hanging-mala{animation-duration:2.6s}.haldi .border-sheen,.mehndi .border-sheen{animation-duration:3.6s;stroke-width:1.65}
+@media(prefers-reduced-motion:reduce){.ritual-floral-arch,.ritual-henna-ring{animation:none!important}}
+
+/* V16 — heritage ivory welcome, rose-and-champagne farewell. */
+.welcome{--title:#772e3c;--ink:#53362c;--gold:#a87c41;--rule:#a57a4259;--accent:#b95a66;--mist:#dca95b26;--glow:#fff5d970;background:radial-gradient(ellipse at 50% 40%,#fff9ec 15%,transparent 70%),linear-gradient(148deg,#ead2a2,#fff5df 46%,#d8b273)}
+.vidai{--title:#873e55;--ink:#57323f;--gold:#ad8058;--rule:#ad80585c;--accent:#be718b;--mist:#cb7f9526;--glow:#fff1d960;background:radial-gradient(ellipse at 50% 37%,#fff6ed 8%,transparent 70%),linear-gradient(150deg,#e3b4ba,#fae5df 50%,#c98e9e)}
+.welcome .page,.vidai .page{inset:8% 7.8% 5.3%}
+.welcome .content,.vidai .content{gap:clamp(4px,.85cqh,8px);padding:3px 0;justify-content:space-evenly}
+.invocation{font-family:'Noto Serif Devanagari','Nirmala UI',serif;font-weight:600;color:var(--title);font-size:clamp(11px,3.7cqw,17px);padding:1px 12px;border-bottom:1px solid var(--rule)}
+.welcome-crest{display:block;width:100%;height:clamp(56px,15cqh,130px);overflow:visible;flex:none}
+.welcome .welcome-heading,.vidai .farewell-heading{font-size:clamp(24px,8cqw,44px);line-height:1.28;margin:0}
+.vidai .farewell-heading{font-size:clamp(23px,7.3cqw,39px)}
+.prayer-panel{width:100%;border-block:1px solid var(--rule);padding:5px 3px;background:linear-gradient(90deg,transparent,#fffdf0b0,transparent)}
+.welcome .prayer-panel .verse{font-size:clamp(10px,3.3cqw,15px);line-height:1.65;font-weight:500;color:var(--title)}
+.welcome .prayer-panel .blessing{font-size:clamp(10px,3.25cqw,15px);line-height:1.55;max-width:none;margin-top:5px}
+.welcome-names{width:100%;display:flex;flex-direction:column;align-items:center;gap:2px}
+.welcome .welcome-names h2{font-size:clamp(26px,9.4cqw,51px);font-weight:700;line-height:1.25;color:var(--title);margin:0}
+.welcome-union{display:flex;gap:8px;align-items:center;width:60%;font-family:'Noto Serif Devanagari',serif;color:var(--gold);font-weight:600;font-size:clamp(12px,4.2cqw,20px)}
+.welcome-union i{height:1px;background:linear-gradient(90deg,transparent,var(--gold));flex:1}.welcome-union i:last-child{transform:rotate(180deg)}
+.welcome-date,.farewell-date{display:flex;align-items:center;justify-content:space-evenly;gap:5px;width:100%;padding:7px 4px;border:1px solid var(--gold);border-radius:5px;background:linear-gradient(110deg,#e8c98d,#fff7d9 50%,#e8c98d);box-shadow:0 3px 8px #8253231c,inset 0 0 0 2px #fff7dc80;font-size:clamp(10px,3.15cqw,15px);font-weight:600;color:var(--title)}
+.welcome-date strong,.farewell-date strong{font-family:'Noto Serif Devanagari',serif;font-size:clamp(12px,4cqw,19px);white-space:nowrap;padding-inline:5px;border-inline:1px solid var(--rule)}
+.farewell-date{background:linear-gradient(110deg,#e4bdaf,#fff3e6,#e4bdaf)}.farewell-date strong{border:0}
+.farewell-events{display:grid;grid-template-columns:1fr 1fr;gap:7px;width:100%}
+.farewell-events>div{border:1px solid var(--gold);border-radius:40% 40% 8px 8px / 22% 22% 8px 8px;background:linear-gradient(155deg,#fff8edeb,#f3d3cfac);box-shadow:inset 0 0 0 3px #fff8ed75,0 3px 8px #6e394315;padding:5px 3px}
+.farewell-art{height:clamp(40px,10.5cqh,88px);width:100%;display:block;overflow:visible}
+.vidai .farewell-events h2{font-size:clamp(17px,5.8cqw,28px);margin:0;line-height:1.3}.vidai .farewell-events p{font-size:clamp(10px,3.45cqw,15px);font-weight:600}
+.family-panel{width:100%;padding:5px 9px;border:1px solid var(--rule);border-radius:7px;background:linear-gradient(135deg,#fff8efbb,#fff1eb88);box-shadow:inset 0 0 0 2px #fff9ef80}
+.family-panel>div+div{border-top:1px solid var(--rule);padding-top:4px;margin-top:4px}
+.family-panel h3{font-family:'Noto Serif Devanagari',serif;font-size:clamp(12px,3.9cqw,18px);color:var(--title);margin:0 0 2px;font-weight:700;line-height:1.3}
+.vidai .family-panel p{font-size:clamp(10px,3.1cqw,14px);line-height:1.5;margin:0}
+.welcome .closing,.vidai .closing{width:100%;font-size:clamp(10px,3.25cqw,15px);line-height:1.55;padding-top:5px}
+.welcome .royal-rosette,.vidai .royal-rosette{opacity:.065}.welcome .watermark,.vidai .watermark{opacity:.025}
+.welcome .border-sheen,.vidai .border-sheen{stroke-width:1.5;animation-duration:4s}.welcome .hanging-mala,.vidai .hanging-mala{animation-duration:3s}
+.crest-flame{transform-box:fill-box;transform-origin:center bottom;animation:crest-flicker 1.15s ease-in-out infinite alternate}.crest-glint{animation:crest-shimmer 2s ease-in-out infinite}.farewell-tassel{transform-box:fill-box;transform-origin:center top;animation:hanging-bloom 3.4s ease-in-out infinite}.feast-steam{animation:steam-rise 2.5s ease-in-out infinite}
+@keyframes crest-flicker{from{transform:scale(.9,.92)}to{transform:scale(1.05,1.1)}}@keyframes crest-shimmer{50%{opacity:.35}}@keyframes steam-rise{0%,100%{opacity:.25;transform:translateY(2px)}50%{opacity:.8;transform:translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){.crest-flame,.crest-glint,.farewell-tassel,.feast-steam{animation:none!important}}
